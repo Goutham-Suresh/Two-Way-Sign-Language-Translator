@@ -1,0 +1,207 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+  <style>   
+Body {  
+  font-family: Verdana;  
+  background-color: #1F2833;  
+}  
+header{
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../wall1.png);
+  height: 100vh;
+  background-size:  cover;
+  background-position: center;
+}
+button {   
+       background-color: #45A29E;   
+       width: 96%;  
+        color: black;   
+        padding: 15px;   
+        margin: 10px 25px;   
+        border: none;   
+        cursor: pointer;   
+         }   
+ form {   
+        border: 3px solid #45A29E;   
+    }   
+ input[type=text], input[type=password] {   
+        width: 96%;   
+        margin: 8px 25px;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px solid green;   
+        box-sizing: border-box;   
+    }  
+ button:hover {   
+        opacity: 0.7;   
+    }   
+  .cancelbtn {   
+        width: auto;   
+        padding: 10px 18px;  
+        margin: 10px 5px;  
+    }   
+        
+     
+ .container {   
+        padding: 25px;   
+        background-color: #0B0C10;  
+    }   
+    h1{color: #45A29E; margin: 25px;}
+    h2{color : #45A29E}
+</style> 
+    
+</head>
+
+<body>
+  <br>
+  <h1>Enter Command : </h1>
+  <input type="text" id="commandInput" />
+  <br>
+  <button onClick="theCommand()">Execute command</button>
+  <br>
+  <br>
+  <a href="index.html">
+    <input type="button" value="Go back to main page" style="margin: 25px;" >
+   </a>
+  <br />
+  <br />
+  <div class="d-flex flex-row bd-highlight mb-3" id="main">
+  </div>
+  <!-- <span id="result"></span> -->
+
+
+  <script>
+
+      
+  function theCommand() {
+    var commandInput = document.getElementById("commandInput");
+    var command = commandInput.value;
+    console.log(command);
+  
+  var s1= command;
+
+  for(var i=0;i<command.length;i++)
+  {
+    let div = document.createElement('div');
+    div.className='p-2';
+    
+    var s1=command.substring(i,i+1);
+    console.log(s1);
+
+   if (s1 == "a" || s1=="A") {
+    div.innerHTML='<img src="MiniProj\\FrontEnd\\ICONS\\A.png"></img>';
+    document.getElementById('main').appendChild(div);
+  }
+  else if (s1 == "b" || s1=="B") {
+    div.innerHTML='<img src="MiniProj\\FrontEnd\\ICONS\\B.png"></img>';
+    document.getElementById('main').appendChild(div);
+  }
+  else if (s1 == "c" || s1=="C") {
+    div.innerHTML='<img src="MiniProj\\FrontEnd\\ICONS\\C.png"></img>';  
+    document.getElementById('main').appendChild(div);
+  }
+  else if (s1 == "d" || s1=="D") {
+    div.innerHTML='<img src="MiniProj\\FrontEnd\\ICONS\\D.png"></img>'; 
+    document.getElementById('main').appendChild(div); 
+  }
+  else if (s1 == "e" || s1=="E") {
+    div.innerHTML='<img src="MiniProj\\FrontEnd\\ICONS\\E.png"></img>';  
+    document.getElementById('main').appendChild(div);
+  }
+  else if (s1 == "f" || s1=="F") {
+    div.innerHTML='<img src="MiniProj\\FrontEnd\\ICONS\\F.png"></img>';  
+    document.getElementById('main').appendChild(div);
+  }
+  else if (s1 == "g" || s1=="G") {
+    div.innerHTML='<img src="MiniProj\\FrontEnd\\ICONS\\G.png"></img>'; 
+    document.getElementById('main').appendChild(div); 
+  }
+  else if (s1 == "h" || s1=="H") {
+    div.innerHTML='<img src="MiniProj\\FrontEnd\\ICONS\\H.png"></img>'; 
+    document.getElementById('main').appendChild(div); 
+  }
+  else if (s1 == "i" || s1=="I") {
+    div.innerHTML='<img src="MiniProj\\FrontEnd\\ICONS\\I.png"></img>';
+    document.getElementById('main').appendChild(div);  
+  }
+  else if (s1 == "j" || s1=="J") {
+    div.innerHTML='<img src="MiniProj\\FrontEnd\\ICONS\\J.png"></img>';  
+    document.getElementById('main').appendChild(div);
+  }
+  else if (s1 == "k" || s1=="K") {
+    div.innerHTML='<img src="MiniProj\\FrontEnd\\ICONS\\K.png"></img>';  
+    document.getElementById('main').appendChild(div);
+  }
+  else if (s1 == "l" || s1=="L") {
+    div.innerHTML='<img src="MiniProj\\FrontEnd\\ICONS\\L.png"></img>'; 
+    document.getElementById('main').appendChild(div); 
+  }
+  else if (s1 == "m" || s1=="M") {
+    div.innerHTML='<img src="MiniProj\\FrontEnd\\ICONS\\M.png"></img>'; 
+    document.getElementById('main').appendChild(div); 
+  }
+  else if (s1 == "n" || s1=="N") {
+    div.innerHTML='<img src="MiniProj\\FrontEnd\\ICONS\\N.png"></img>';  
+    document.getElementById('main').appendChild(div);
+  }
+  else if (s1 == "o" || s1=="O") {
+    div.innerHTML='<img src="MiniProj\\FrontEnd\\ICONS\\O.png"></img>';
+    document.getElementById('main').appendChild(div);  
+  }
+  else if (s1 == "p" || s1=="P") {
+    div.innerHTML='<img src="MiniProj\\FrontEnd\\ICONS\\P.png"></img>'; 
+    document.getElementById('main').appendChild(div); 
+  }
+  else if (s1 == "q" || s1=="Q") {
+    div.innerHTML='<img src="MiniProj\\FrontEnd\\ICONS\\Q.png"></img>';  
+    document.getElementById('main').appendChild(div);
+  }
+  else if (s1 == "r" || s1=="R") {
+    div.innerHTML='<img src="MiniProj\\FrontEnd\\ICONS\\R.png"></img>';  
+    document.getElementById('main').appendChild(div);
+  }
+  else if (s1 == "s" || s1=="S") {
+    div.innerHTML='<img src="MiniProj\\FrontEnd\\ICONS\\S.png"></img>';  
+    document.getElementById('main').appendChild(div);
+  }
+  else if (s1 == "t" || s1=="T") {
+    div.innerHTML='<img src="MiniProj\\FrontEnd\\ICONS\\T.png"></img>';  
+    document.getElementById('main').appendChild(div);
+  }
+  else if (s1 == "u" || s1=="U") {
+    div.innerHTML='<img src="MiniProj\\FrontEnd\\ICONS\\U.png"></img>'; 
+    document.getElementById('main').appendChild(div); 
+  }
+  else if (s1 == "v" || s1=="V") {
+    div.innerHTML='<img src="MiniProj\\FrontEnd\\ICONS\\V.png"></img>'; 
+    document.getElementById('main').appendChild(div); 
+  }
+  else if (s1 == "w" || s1=="W") {
+    div.innerHTML='<img src="MiniProj\\FrontEnd\\ICONS\\W.png"></img>';  
+    document.getElementById('main').appendChild(div);
+  }
+  else if (s1 == "x" || s1=="X") {
+    div.innerHTML='<img src="MiniProj\\FrontEnd\\ICONS\\X.png"></img>';  
+    document.getElementById('main').appendChild(div);
+  }
+  else if (s1 == "y" || s1=="Y") {
+    div.innerHTML='<img src="MiniProj\\FrontEnd\\ICONS\\Y.png"></img>';  
+    document.getElementById('main').appendChild(div);
+  }
+  else if (s1 == "z" || s1=="Z") {
+    div.innerHTML='<img src="MiniProj\\FrontEnd\\ICONS\\Z.png"></img>';  
+    document.getElementById('main').appendChild(div);
+  } 
+  else  {
+    div.innerHTML = "<p>Invalid command</p>";
+    document.getElementById('main').appendChild(div);
+  }
+
+}
+}
+    </script>
+
+</body>
+
+</html>
