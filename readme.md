@@ -10,6 +10,6 @@ This sign language translator is a two communication application that translates
 
 4) Clicking ASL to English button will execute the model "had-gesture-recognition-mediapipe/app.py" file. 
 
-5)Clicking English to ASL button will execute the "FrontEnd/Eng_to_ASL.html" and enter the sequence of words to translate.
+5) Clicking English to ASL button will execute the "FrontEnd/Eng_to_ASL.html" and enter the sequence of words to translate.
 
 6) for Knowing more about the model and to execute it refer: https://github.com/kinivi/hand-gesture-recognition-mediapipe
